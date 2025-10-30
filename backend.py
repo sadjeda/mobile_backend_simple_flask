@@ -1,10 +1,11 @@
 from flask import Flask
+from flask_cors import CORS
 import json
 import datetime
 import os
 
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route('/news.all.get')
 def get_news_all_articles():
