@@ -32,7 +32,7 @@ def get_news_categories():
 
 @app.route('/')
 def index():
-	return 'Welcome ENSIA Students from Flask!'
+	return 'Welcome Students from Flask!'
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
